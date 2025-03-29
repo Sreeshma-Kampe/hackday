@@ -24,7 +24,7 @@ function App() {
     try {
       let response;
       if (currentView === 'login') {
-        response = await fetch('http://localhost:8081/api/auth/login', {
+        response = await fetch('https://hackdaybackend-production.up.railway.app/api/auth/login', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -35,7 +35,7 @@ function App() {
           }),
         });
       } else if (currentView === 'register') {
-        response = await fetch('http://localhost:8081/api/auth/register', {
+        response = await fetch('https://hackdaybackend-production.up.railway.app/api/auth/register', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
