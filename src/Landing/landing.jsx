@@ -6,6 +6,7 @@ import Vision from './Vision';
 import Mission from './Mission';
 import Feedback from './Feedback';
 import Footer from './Footer';
+import Chatbot from '../chatbot/PAMBot';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Services />
       <Vision />
       <Mission />
+      <Chatbot/>
       <Feedback />
       <div id="footer">
         <Footer />

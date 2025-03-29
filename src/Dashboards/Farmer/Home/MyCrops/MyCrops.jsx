@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Eye, Sprout, TrendingUp, X } from 'lucide-react';
 
-function App() {
+function MyCrops() {
     const [progress, setProgress] = useState(0);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isEditing, setIsEditing] = useState(false);
@@ -101,17 +101,15 @@ function App() {
 
     return (
         <div className="relative min-h-screen p-8">
-            {/* Gradient Balls */}
             <div className="gradient-ball from-green-300 to-green-500 w-96 h-96 left-1/2 top-1/4 -translate-x-1/2 -translate-y-1/2" />
             <div className="gradient-ball from-blue-300 to-blue-500 w-96 h-96 left-[65%] top-3/4 -translate-x-1/2 -translate-y-1/2" />
             <div className="gradient-ball from-yellow-300 to-orange-500 w-48 h-48 right-[5%] top-[15%]" />
             <div className="gradient-ball from-pink-300 to-red-500 w-56 h-56 left-[25%] bottom-[5%]" />
             <div className="gradient-ball from-teal-300 to-cyan-500 w-72 h-72 right-[8%] top-[8%]" />
 
-            {/* Content */}
             <div className="relative z-10">
                 <div className="flex justify-between items-center mb-6">
-                    <h1 className="text-3xl font-bold text-gray-800 mb-6">Dashboard</h1>
+                    <h1 className="text-3xl font-bold text-gray-800 mb-6">My Crops</h1>
                     <button
                         onClick={() => {
                             setIsEditing(false);
@@ -124,7 +122,6 @@ function App() {
                     </button>
                 </div>
 
-                {/* Modal */}
                 {isModalOpen && (
                     <div className="modal-overlay" onClick={() => {
                         setIsModalOpen(false);
@@ -294,7 +291,6 @@ function App() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="glass w-full p-6 rounded-2xl relative overflow-hidden">
-                        {/* Header */}
                         <div className="flex justify-between items-center mb-8">
                             <h2 className="text-2xl font-bold text-gray-800">{cropData.name}</h2>
                             <button
@@ -305,10 +301,7 @@ function App() {
                                 <Eye className="w-6 h-6 text-gray-600" />
                             </button>
                         </div>
-
-                        {/* Main Content */}
                         <div className="grid md:grid-cols-2 gap-6">
-                            {/* Data Cards */}
                             <div className="space-y-4">
                                 <div className="glass p-4 rounded-xl hover:shadow-lg transition-all duration-300">
                                     <div className="flex items-center justify-between">
@@ -337,8 +330,6 @@ function App() {
                                     </div>
                                 </div>
                             </div>
-
-                            {/* Progress Circle */}
                             <div className="flex items-center justify-center">
                                 <div className="relative w-48 h-48">
                                     <svg className="w-full h-full" viewBox="0 0 100 100">
@@ -379,4 +370,4 @@ function App() {
     );
 }
 
-export default App;
+export default MyCrops;

@@ -2,7 +2,7 @@ import { Bug } from 'lucide-react';
 
 export const CropHealthCard = () => {
   return (
-    <div
+    <div 
       className="glass p-6 rounded-xl"
       onClick={() => console.log('Crop health card clicked')}
     >

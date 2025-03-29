@@ -61,6 +61,9 @@ function App() {
         }
         else if (currentView === 'login') {
           const role = responseData.role;
+          const id = responseData.id;
+          localStorage.setItem("id", id);
+          localStorage.setItem("role", role);
           console.log('User Role:', role);
           if (role === 'farmer') {
             navigate('/home');

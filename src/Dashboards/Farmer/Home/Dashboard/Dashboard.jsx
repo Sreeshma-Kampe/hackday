@@ -55,6 +55,7 @@ function Dashboard({ onNavigate }) {
             </div>
             
               <MarketPricesCard marketPrices={marketPrices} />
+            
           </div>
         </main>
       </div>

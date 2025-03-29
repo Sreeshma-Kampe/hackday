@@ -1,0 +1,30 @@
+description: Ultralytics best model trained on /content/datasets/Detecting diseases.v1i.yolov8/data.yaml
+author: Ultralytics
+date: '2025-03-28T20:46:36.355212'
+version: 8.3.98
+license: AGPL-3.0 License (https://ultralytics.com/license)
+docs: https://docs.ultralytics.com
+stride: 32
+task: detect
+batch: 1
+imgsz:
+- 640
+- 640
+names:
+  0: ALS
+  1: Angular Leafspot
+  2: Anthracnose Fruit Rot
+  3: Bean Rust
+  4: Blossom Blight
+  5: Gray Mold
+  6: Leaf Spot
+  7: Powdery Mildew Fruit
+  8: Powdery Mildew Leaf
+  9: disease
+  10: leaf mold
+  11: spider mites
+args:
+  batch: 1
+  half: false
+  int8: false
+  nms: false

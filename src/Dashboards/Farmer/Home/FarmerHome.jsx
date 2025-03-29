@@ -19,7 +19,12 @@ import { GenericContent } from './GenericContent';
 import './farmstyles.css';
 import MyCrops from './MyCrops/MyCrops';
 import Pesticides from './Pesticides/Pesticides';
-
+import Documents from './Documents/Documents';
+import DiseaseDetection from './DiseaseDetection/DiseaseDetection';
+import Support from './Support/Support';
+import CommunityForum from './CommunityForum/CommunityForum';
+import Market from './Market/Market';
+import Profile from './Profile/Profile';
 
 function FarmerHome() {
   const [isExpanded, setIsExpanded] = useState(true);
@@ -66,19 +71,19 @@ function FarmerHome() {
       case 'pesticides':
         return <Pesticides onNavigate={handleNavigation} />;
       case 'disease':
-        return <Dashboard onNavigate={handleNavigation} />;
+        return <DiseaseDetection onNavigate={handleNavigation} />;
       case 'crops':
         return <MyCrops onNavigate={handleNavigation} />;
       case 'market':
-        return <Dashboard onNavigate={handleNavigation} />;
+        return <Market onNavigate={handleNavigation} />;
       case 'forum':
-        return <Dashboard onNavigate={handleNavigation} />;
+        return <CommunityForum onNavigate={handleNavigation} />;
       case 'support':
-        return <Dashboard onNavigate={handleNavigation} />;
+        return <Support onNavigate={handleNavigation} />;
       case 'documents':
-        return <Dashboard onNavigate={handleNavigation} />;
+        return <Documents onNavigate={handleNavigation} />;
       case 'profile':
-        return <Dashboard onNavigate={handleNavigation} />;
+        return <Profile onNavigate={handleNavigation} />;
       default:
         return <GenericContent />;
     }
@@ -86,14 +91,12 @@ function FarmerHome() {
 
   return (
     <div className="h-screen w-full flex relative overflow-hidden bg-gradient-to-br from-yellow-50 to-blue-50">
-      {/* Gradient Balls */}
       <div className="absolute left-0 top-0 w-[600px] h-screen pointer-events-none">
         <div className="gradient-ball w-[400px] h-[400px] -top-20 -left-20 from-blue-400 to-purple-500"></div>
         <div className="gradient-ball w-[350px] h-[350px] top-1/3 -left-10 from-green-300 to-emerald-500"></div>
         <div className="gradient-ball w-[450px] h-[450px] top-2/3 -left-32 from-yellow-300 to-orange-500"></div>
       </div>
       
-      {/* Fixed Navigation */}
       <div className={`glass rounded-3xl m-4 transition-all duration-300 flex flex-col z-10 h-[calc(100vh-2rem)] ${isExpanded ? 'w-64' : 'w-16'}`}>
         <div className="p-4 flex-1">
           <div className="flex items-center justify-between mb-6">

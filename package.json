@@ -10,7 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tensorflow/tfjs": "^4.22.0",
+    "axios": "^1.8.4",
+    "framer-motion": "^12.6.2",
     "lucide-react": "^0.344.0",
+    "onnxruntime-web": "^1.21.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-hot-toast": "^2.5.2",
