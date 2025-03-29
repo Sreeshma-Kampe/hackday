@@ -10,7 +10,7 @@ const Hero = () => {
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover"
       >
-        <source src="https://res.cloudinary.com/dzymyjltu/video/upload/v1740002012/Meet_the_MetaHumans__Free_Sample_Now_Available___Unreal_Engine_2160p_trvf8h.webm" type="video/mp4" />
+        <source src="https://res.cloudinary.com/dck8me2f8/video/upload/v1743201069/fgwa85df9ph1xnwatpx9.mp4" type="video/mp4" />
       </video>
       
       <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent">
